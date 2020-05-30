@@ -168,6 +168,9 @@ while again == True:
         molarRatio = float(productMoles)/ float(productIon2[1])
         mass = float(negSolution[3]) * float(molarRatio) * float(massOfProduct[4]) # fix for moles of overall product
         print("The mass of " + str(positiveSolution[0]) + str(negSolution[0]) + " " + str(round(mass,2)) + "grams")
+    # no limiting reagent
+    elif (negSolution[4] == negSolution[3]) and (positiveSolution[4] == positiveSolution[3]):
+        print("There is no limiting reagent")
 
 
     #play again
